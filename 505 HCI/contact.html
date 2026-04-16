@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Wellbeing Hub - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Wellbeing Hub</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="booking.html" class="nav-link">Book Now</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-section">
+  <div class="section-banner">
+    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1400&q=80" alt="Reception support" class="section-banner-img" />
+    <div class="section-banner-overlay">
+      <div class="section-banner-text">
+        <h2>Contact Us</h2>
+        <p>We are here to help</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card">
+          <span class="icon">Location</span>
+          <div>
+            <h4>Visit Us</h4>
+            <p>12 Greenfield Road, Coventry, CV1 2AB</p>
+            <p>Mon-Fri: 9am-6pm | Sat: 10am-3pm</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="icon">Phone</span>
+          <div>
+            <h4>Call Us</h4>
+            <p>General enquiries: <a href="tel:02412345678">024 1234 5678</a></p>
+            <p>Crisis line: <a href="tel:08001234567">0800 123 4567</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="icon">Email</span>
+          <div>
+            <h4>Email Us</h4>
+            <a href="mailto:hello@wellbeinghub.gov.uk">hello@wellbeinghub.gov.uk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-col">
+        <h3 class="contact-form-title">Send us a message</h3>
+        <div class="form-wrap">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="cName">Your Name</label>
+              <input type="text" id="cName" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email Address</label>
+              <input type="email" id="cEmail" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject">
+                <option value="general">General enquiry</option>
+                <option value="service">Service information</option>
+                <option value="booking">Booking</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cMsg">Your Message</label>
+              <textarea id="cMsg" placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-green">Send Message</button>
+          </form>
+
+          <div id="contactSuccess" class="success-msg">
+            <p><strong>Message received.</strong></p>
+            <p>Thank you. We will reply within 2 working days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Community Wellbeing Hub</strong> - 12 Greenfield Road, Coventry, CV1 2AB</p>
+    <p><a href="mailto:hello@wellbeinghub.gov.uk">hello@wellbeinghub.gov.uk</a> | <a href="tel:02412345678">024 1234 5678</a></p>
+    <p class="footer-small">&copy; 2026 Community Wellbeing Hub. Funded by Coventry City Council.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Wellbeing Hub - Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>Wellbeing Hub</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="booking.html" class="nav-link">Book Now</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-section">
+  <div class="section-banner">
+    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b6001?w=1400&q=80" alt="Booking and registration" class="section-banner-img" />
+    <div class="section-banner-overlay">
+      <div class="section-banner-text">
+        <h2>Book an Event</h2>
+        <p>Reserve your free place in a few simple steps</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner booking-layout">
+    <div class="booking-info">
+      <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=700&q=80" alt="Calendar planning" class="booking-side-img" />
+      <div class="booking-steps">
+        <h3>How it works</h3>
+        <ol>
+          <li>Fill in your name and email</li>
+          <li>Choose your event</li>
+          <li>Submit the booking form</li>
+          <li>Receive a confirmation email</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="form-wrap">
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" placeholder="e.g. Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="eventChoice">Choose an Event *</label>
+          <select id="eventChoice" required>
+            <option value="">Please select an event</option>
+            <option value="walk">Morning Walk and Wellbeing Talk (19 Apr)</option>
+            <option value="mindfulness">Mindfulness for Beginners (22 Apr)</option>
+            <option value="funday">Family Fun Day (26 Apr)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="needs">Accessibility or dietary requirements?</label>
+          <textarea id="needs" placeholder="Optional notes"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-green">Reserve My Place</button>
+      </form>
+
+      <div id="successMsg" class="success-msg">
+        <p><strong>You are booked in.</strong></p>
+        <p>Thank you. A confirmation email will be sent shortly.</p>
+        <br />
+        <button id="resetForm" type="button" class="btn btn-green">Book Another Event</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Community Wellbeing Hub</strong> - 12 Greenfield Road, Coventry, CV1 2AB</p>
+    <p><a href="mailto:hello@wellbeinghub.gov.uk">hello@wellbeinghub.gov.uk</a> | <a href="tel:02412345678">024 1234 5678</a></p>
+    <p class="footer-small">&copy; 2026 Community Wellbeing Hub. Funded by Coventry City Council.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
